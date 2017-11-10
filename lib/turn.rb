@@ -11,13 +11,18 @@ end
 def input_to_index(move)
 index=(move.to_i)-1
 end
-def valid_move?(board,index)
-  if (index.between?(0, 8)) && (board[index]==" "||board[index]==""||board[index]==nil)
-        true
-      else
-        false
+
+def position_taken?(board,index)
+  if (board[index]==" "||board[index]==""||board[index]==nil)
   end
 end
+
+def valid_move?(board,index)
+  if (index.between?(0, 8)) && position_taken?(board,index)
+  end
+end
+
+
 def move(array,index,value="X")
   array[index]=value
 end
