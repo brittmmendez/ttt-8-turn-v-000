@@ -19,10 +19,11 @@ def valid_move?(board,index)
 end
 
 def position_taken?(board,index)
-if board[index]==" "||board[index]==""||board[index]==nil
-  true
-else
+  if board[index]==" "||board[index]==""||board[index]==nil
+    true
+  else
   false
+end
 end
 
 def move(array,index,value="X")
