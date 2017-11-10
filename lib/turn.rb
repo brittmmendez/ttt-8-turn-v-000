@@ -17,6 +17,13 @@ def valid_move?(board,index)
         false
   end
 end
+def position_taken?(board,index)
+  if board[index]==" "||board[index]==""||board[index]==nil
+    true
+  else
+  false
+end
+end
 
 def move(array,index,value="X")
   array[index]=value
